@@ -1,0 +1,47 @@
+@use "../global" as g;
+
+// フォント
+//--------------------------
+
+// 蛍光カラー
+//--------------------------
+.u-color-accent {
+	font-weight: 700;
+	background: linear-gradient(
+		to bottom,
+		transparent 66%,
+		#fff99f 66%,
+		#fff99f 90%,
+		transparent 90%
+	);
+}
+
+// テキスト折り返さない
+//--------------------------
+.u-white-space {
+	white-space: nowrap;
+}
+
+// テキスト折り返さない
+//--------------------------
+.u-inline-block {
+	display: inline-block;
+}
+
+// リンクテキスト
+//--------------------------
+.u-text-link {
+	color: #2828bb !important;
+	cursor: pointer !important;
+	border-bottom: 1px solid #2828bb !important;
+	@include g.hover;
+}
+
+.u-text-base {
+	font-size: g.$fz-base;
+	font-weight: g.$fw-base;
+	line-height: g.$lh-base;
+	color: g.$cr-text;
+	letter-spacing: g.$ls-base;
+}
+
